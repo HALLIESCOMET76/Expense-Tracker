@@ -6,6 +6,26 @@ body {
     color: #f0f0f0;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-bottom: 2px solid #00ffcc;
+}
+
+header img {
+    margin-right: 15px;
+}
+
+header h3 {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+    margin: 0;
+    font-size: 24px;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 20px;

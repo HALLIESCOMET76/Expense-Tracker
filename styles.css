@@ -1,132 +1,109 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
-    color: #f0f0f0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2c2c2c;
+    text-align: center;
+    background-color: #fff;
     padding: 20px;
-    border-bottom: 2px solid #00ffcc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 header img {
-    margin-right: 15px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 header h3 {
-    color: #00ffcc;
-    text-shadow: 0 0 10px #00ffcc;
-    margin: 0;
+    margin-top: 10px;
     font-size: 24px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #00ffcc;
-    text-shadow: 0 0 10px #00ffcc;
+    color: #333;
 }
 
 .input-section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #2c2c2c;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-label {
-    font-weight: bold;
-    color: #00ffcc;
+.input-section label {
+    margin-right: 10px;
 }
 
-input, select {
-    padding: 5px;
+.input-section select, .input-section input {
+    padding: 10px;
+    margin-right: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #333;
-    color: #f0f0f0;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
 }
 
-input:hover, select:hover {
-    border-color: #00ffcc;
-    background-color: #1f1f1f;
-}
-
-button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
+.input-section button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    text-shadow: 0 0 5px #00ffcc;
 }
 
-button:hover {
-    background-color: #0056b3;
-    box-shadow: 0 0 15px #007bff, 0 0 25px #007bff, 0 0 35px #007bff;
+.input-section button:hover {
+    background-color: #4cae4c;
 }
 
 .expense-list {
-    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.expense-list h2 {
+    margin-bottom: 10px;
 }
 
 table {
-    border-collapse: collapse;
     width: 100%;
-    background-color: #2c2c2c;
-    color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #444;
-    padding: 8px;
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
     text-align: left;
 }
 
-th {
-    background-color: #333;
-    color: #00ffcc;
-    text-shadow: 0 0 5px #00ffcc;
+table th {
+    background-color: #f4f4f4;
 }
 
-td {
-    background-color: #1a1a1a;
-}
-
-td:hover {
-    background-color: #333;
-}
-
-#total-amount {
+tfoot td {
     font-weight: bold;
-    color: #00ffcc;
-    text-shadow: 0 0 10px #00ffcc;
+    background-color: #f4f4f4;
 }
 
-.delete-btn {
-    background-color: red;
+button.delete-btn {
+    background-color: #d9534f;
     color: white;
+    padding: 8px 12px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    text-shadow: 0 0 5px #ff1a1a;
 }
 
-.delete-btn:hover {
-    background-color: darkred;
-    box-shadow: 0 0 15px red, 0 0 25px red, 0 0 35px red;
+button.delete-btn:hover {
+    background-color: #c9302c;
 }

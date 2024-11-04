@@ -1,6 +1,7 @@
++
 // --- Registration Page (index.html) ---
 document.addEventListener("DOMContentLoaded", () => {
-    const registerForm = document.getElementById("registerForm");
+    const registerForm = document.getElementById("registerForm");   
 
     registerForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("Username already exists. Please choose a different username.");
         } else {
             localStorage.setItem(newUsername, JSON.stringify({ password: newPassword, expenses: [] }));
-            alert("Registration successful! Please log in.");
+            alert("Registeration hogaya tera, Ab jaa ke login karr");
             window.location.href = "login.html";
         }
     });
@@ -32,10 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (userData && userData.password === password) {
             localStorage.setItem("currentUser", username);
-            alert("Login successful!");
+            alert("Login Hogaya tera");
             window.location.href = "main.html";
         } else {
-            alert("Invalid username or password. Please try again.");
+            alert("Yaa to username galat hai to password, ek baar aur try karrr.");
         }
     });
 });
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
             amountInput.value = "";
             dateInput.value = "";
         } else {
-            alert("Please fill in all fields");
+            alert("Ghadhe saari ki saari field zaroori hai!");
         }
     };
 
